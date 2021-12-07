@@ -8,11 +8,11 @@ const GlobalStyle = createGlobalStyle`
 	}
 	main {
 		margin: auto;
-		border: 1px solid;
-		width: 88vw;
+		width: 90vw;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 5rem;
+		margin-top: 5rem;
 	}
 `;
 

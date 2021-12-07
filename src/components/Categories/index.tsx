@@ -1,4 +1,5 @@
 import { Component } from "react";
+import HeaderWrapper from './styled';
 
 interface IProps {
 	categories: string[];
@@ -12,14 +13,17 @@ class Categories extends Component<IProps, {}>{
 		const handleCategory = this.props.filterItems;
 		
 		return (
-			<header>
+			<HeaderWrapper>
 				<h2>Our Menu</h2>
-				{categories.map((category) => {
-					return (
-						<button onClick={() => handleCategory(category)}>{category}</button>
-					);
-				})}
-			</header>
+				<div className="underline"></div>
+				<div className="filter-btn">
+					{categories.map((category) => {
+						return (
+							<button onClick={() => handleCategory(category)}>{category}</button>
+						);
+					})}
+					</div>
+			</HeaderWrapper>
 		);
 	}
 }

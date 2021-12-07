@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-	border: 1px solid blue;
 	display: flex;
 	flex-wrap: wrap;
 	
 	article {
 		width: 50%;
-		border: 1px solid;
 		display: flex;
+		margin-bottom: 3.3rem;
 	}
 
 	img {
